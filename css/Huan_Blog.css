@@ -12,8 +12,8 @@
     margin-top: 100px;
     }
      
-    .search-box.hovered, .search-box:hover, .search-box:active {  
-    border: 1px solid #aaa;
+    .search-box.hovered, .search-box:hover, .search-box:active,input#name:active, input#name:hover, input#email:active, input#email:hover{  
+    border: 2px solid #aaa;
     }
      
     .search-box input[type=text] { 
@@ -47,7 +47,7 @@
     color: #fff;  
     background-color: #ff0000;
     }
-    div.category, .tag {
+    .category, .tag {
         margin-top: 100px;
         border-width: 2px;
         border-style: solid;
@@ -56,7 +56,16 @@
         border-radius: 8px;
         border-color: rgb(170, 165, 165);
     }
-    div.category-content{
+    .category{
+        margin-top: 100px;
+        border-width: 2px;
+        border-style: solid;
+        width: 350px;
+        height: 300px; 
+        border-radius: 8px;
+        border-color: rgb(170, 165, 165);
+    }
+    .category-content{
         text-align: center;
         margin-left: 30%;
         margin-right: 30%;
@@ -66,7 +75,7 @@
         width:138px
     }
     
-    div.newsletter{
+    .newsletter{
         text-align: center;
         margin-top: 100px;
         border-width: 2px;
@@ -76,15 +85,16 @@
         border-radius: 8px;
         border-color: rgb(170, 165, 165);
     }
-    button#tag, div.Touch button{
-        border-radius: 16px;
+    button#tag, .Touch button{
+        
         border: none;
         margin: 10px 10px;
-        font-size: 15px;
-        
+        font-size: 20px;
+        text-align: center;
     }
     button#tag small{
-        font-size: 15px;
+        font-size: 12px;
+        padding: 5px 5px;
         
     }
     button#signup {
@@ -116,6 +126,9 @@
     div.category h5{
         margin-top: 10px;
         margin-bottom: 20px;
+    }
+    .category-l, .category-r{
+        display: inline;
     }
     div.tag h5 ,div.tag button#tag{
         margin-left: 20px;
@@ -151,44 +164,50 @@
         display: inline-block;
         text-align: center;
         margin-bottom: 100px;
+        margin-top: 50px;
       }
     .pagination-content{
         text-align: center;
     }
       
-      .pagination a {
+    .pagination a {
         color: black;
         float: left;
         padding: 8px 16px;
         text-decoration: none;
+        font-size: 10px;
       }
-      
-      .pagination a.active {
+    @media (max-width: 768px){
+        .pagination small{
+            display: none;
+        }
+    }
+    .pagination a.active {
         background-color:  #FF3D00;
         color: white;
         border-radius: 5px;
       }
       
-      .pagination a:hover:not(.active) {
+    .pagination a:hover:not(.active) {
         background-color: #ddd;
         border-radius: 5px;
       }
-      div.bg-red {
+    div.bg-red {
           width:100%;
       }
-      div.Touch{
+    div.Touch{
           text-align: center;
           padding: 40px 50px;
           background-color:  #D40000;
           height: 170px;
       }
-      .Touch{
+    .Touch{
           color: white;
       }
-      small{
+    small{
           font-size: 11px;
       }
-      .col-wrap {
+    .col-wrap {
         display: table; 
         width: 100%; 
     }
@@ -203,12 +222,82 @@
     .search-box{
         box-shadow: 2px 2px 2px #c4bebe;
     }
-    small#numbers{
+    .category-r{
         margin-left: 10px;
         font-size: 15px;
         border-radius: 50%;
         background-color: rgb(177, 173, 173);
+        float: right;
+        padding: 3px 5px;
     }
-    .blog{
+    .blog-content{
         margin-top: 150px;
     }
+    .blog{
+        margin-top: 100px;
+    }
+    .btntag
+    {
+        float: left;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 100px;
+        font-size: 13px;
+        background-color: rgb(221, 215, 215);
+    }
+    .btntag:hover{
+        transform: translateY(-3px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    }
+    .btnview
+    {  
+        color: red;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        text-decoration: none;
+        padding: 5px 20px;
+        display: inline-block;
+        border-radius: 10px;
+        font-size: 13px;
+        background-color: rgb(221, 215, 215);
+    }
+    .btnview:hover{
+        color: red;
+        transform: translateY(-1px);
+        box-shadow: 0 5px 20px rgba(0, 0, 0, .2);
+    }
+    .btnpag
+    {
+        float: left;
+        margin-bottom: 5px;
+        margin-left: 20px;
+        text-decoration: none;
+        padding: 10px 20px;
+        display: inline-block;
+        border-radius: 100px;
+        font-size: 50px;
+        background-color: rgb(221, 215, 215);
+    }
+    #tr_info{
+        float: left;
+        text-align: left;
+    }
+    td#articles{
+        text-align: left;
+    }
+    a#title:hover, a#hover-category:hover{
+        text-shadow: 5px 2px 4px rgb(175, 172, 172);
+    }
+    button#signup:hover{
+        transform: translateY(-1px);
+        box-shadow: 0 5px 20px rgba(201, 23, 23, 0.658);
+    }
+    .read:hover{
+        text-shadow: 5px 2px 4px rgba(179, 21, 21, 0.527);
+    }
+    
+    
+    
